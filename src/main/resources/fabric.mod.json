@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "fight_alert",
+  "version": "${version}",
+  "name": "Fight_Alert",
+  "description": "",
+  "authors": ["AntiCore"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fight_alert/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.burcope.fight_alert.client.Fight_alertClient"
+    ],
+    "main": [
+      "org.burcope.fight_alert.Fight_alert"
+    ]
+  },
+  "mixins": [
+    "fight_alert.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
