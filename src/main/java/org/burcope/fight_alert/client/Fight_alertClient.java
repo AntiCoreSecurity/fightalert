@@ -13,10 +13,8 @@ public class Fight_alertClient implements ClientModInitializer {
     public void onInitializeClient() {
         LOGGER.info("[FightAlertMod] 클라이언트 모드 초기화 중...");
 
-        // 설정 파일 로드 (없으면 생성됨)
         ConfigManager.loadConfig();
 
-        // 슬래시 명령어 등록
         FightCommand.registerCommands();
 
         LOGGER.info("[FightAlertMod] 초기화 완료!");
